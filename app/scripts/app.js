@@ -8,16 +8,15 @@
  *
  * Main module of the application.
  */
-angular
+var airlinesApp = angular
   .module('airlinesApp', [
     'ngResource',
     'ngRoute',
-    'firebase',
     'ui.bootstrap'
   ])
   // .constant('FIREBASE_URL', 'https://airlinesapp.firebaseio.com/');
 
-  .config(function($routeProvider) {
+  airlinesApp.config(function($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
