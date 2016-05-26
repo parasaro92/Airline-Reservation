@@ -6,7 +6,7 @@
     "Arrival": "7:40 PM",
     "Duration": "2 Hours 40 mins",
     "Airline": "Jet Airways",
-    "Seats Available": 1,
+    "Seats_available": 1,
     "Price": 6900
   },
   {
@@ -16,7 +16,7 @@
     "Arrival": "12:10 AM",
     "Duration": "2 Hours 30 mins",
     "Airline": "Air India",
-    "Seats Available": 1,
+    "Seats_available": 1,
     "Price": 7500
   },
   {
@@ -26,7 +26,7 @@
     "Arrival": "9:30 AM",
     "Duration": "2 Hours 30 mins",
     "Airline": "Jet Airways",
-    "Seats Available": 2,
+    "Seats_available": 2,
     "Price": 4000
   },
   {
@@ -36,7 +36,7 @@
     "Arrival": "3:20 PM",
     "Duration": "2 Hours 50 Mins",
     "Airline": "Air India",
-    "Seats Available": 3,
+    "Seats_available": 3,
     "Price": 9000
   },
   {
@@ -46,7 +46,7 @@
     "Arrival": "7:00 PM",
     "Duration": "2 Hours",
     "Airline": "Air India",
-    "Seats Available": 3,
+    "Seats_available": 3,
     "Price": 10000
   },
   {
@@ -56,7 +56,7 @@
     "Arrival": "12:10 AM",
     "Duration": "2 Hours 40 mins",
     "Airline": "Jet Airways",
-    "Seats Available": 3,
+    "Seats_available": 3,
     "Price": 6300
   },
   {
@@ -66,7 +66,7 @@
     "Arrival": "8:00 PM",
     "Duration": "2 Hours",
     "Airline": "Indigo",
-    "Seats Available": 5,
+    "Seats_available": 5,
     "Price": 6000
   },
   {
@@ -76,7 +76,7 @@
     "Arrival": "6:00 AM",
     "Duration": "3 Hours",
     "Airline": "Air India",
-    "Seats Available": 7,
+    "Seats_available": 7,
     "Price": 8000
   },
   {
@@ -86,7 +86,7 @@
     "Arrival": "5:00 AM",
     "Duration": "3 hours",
     "Airline": "Air India",
-    "Seats Available": 10,
+    "Seats_available": 10,
     "Price": 7000
   },
   {
@@ -96,7 +96,7 @@
     "Arrival": "7:50 AM",
     "Duration": "2 Hours",
     "Airline": "Air India",
-    "Seats Available": 12,
+    "Seats_available": 12,
     "Price": 5699
   },
   {
@@ -106,7 +106,7 @@
     "Arrival": "3:20 PM",
     "Duration": "3 Hours",
     "Airline": "Air India",
-    "Seats Available": 12,
+    "Seats_available": 12,
     "Price": 9000
   },
   {
@@ -116,7 +116,7 @@
     "Arrival": "5:00 AM",
     "Duration": "2 Hours",
     "Airline": "Indigo",
-    "Seats Available": 21,
+    "Seats_available": 21,
     "Price": 6500
   },
   {
@@ -126,7 +126,7 @@
     "Arrival": "8:00 AM",
     "Duration": "2 Hours 10 mins",
     "Airline": "Indigo",
-    "Seats Available": 21,
+    "Seats_available": 21,
     "Price": 5700
   },
   {
@@ -136,7 +136,7 @@
     "Arrival": "7:00 PM",
     "Duration": "2 Hours 10 mins",
     "Airline": "Air India",
-    "Seats Available": 24,
+    "Seats_available": 24,
     "Price": 5750
   },
   {
@@ -146,7 +146,7 @@
     "Arrival": "6:00 AM",
     "Duration": "3 Hours",
     "Airline": "Indigo",
-    "Seats Available": 25,
+    "Seats_available": 25,
     "Price": 7999
   },
   {
@@ -156,7 +156,7 @@
     "Arrival": "8:00 AM",
     "Duration": "3 Hours",
     "Airline": "Air India",
-    "Seats Available": 26,
+    "Seats_available": 26,
     "Price": 8000
   },
   {
@@ -166,7 +166,7 @@
     "Arrival": "9:00 PM",
     "Duration": "3 Hours",
     "Airline": "Air India",
-    "Seats Available": 27,
+    "Seats_available": 27,
     "Price": 5000
   },
   {
@@ -176,7 +176,7 @@
     "Arrival": "6:05 AM",
     "Duration": "3 Hours 5 mins",
     "Airline": "Jet Airways",
-    "Seats Available": 29,
+    "Seats_available": 29,
     "Price": 7500
   },
   {
@@ -186,7 +186,7 @@
     "Arrival": "4:50 AM",
     "Duration": "2 Hours 20 mins",
     "Airline": "Air India",
-    "Seats Available": 36,
+    "Seats_available": 36,
     "Price": 4500
   },
   {
@@ -196,7 +196,7 @@
     "Arrival": "7:50 PM",
     "Duration": "2 Hours 50 mins",
     "Airline": "Indigo",
-    "Seats Available": 56,
+    "Seats_available": 56,
     "Price": 4800
   }
 ]
