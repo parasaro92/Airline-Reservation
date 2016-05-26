@@ -22,17 +22,37 @@
   airlinesApp.controller('MainCtrl', function($scope, JsonService, $location) {
     
     JsonService.query(function(data){
-      // console.log(data);
+      console.log(data);
       $scope.contents = data;
+      // var arr = [];
+
+      // // for(i=0; i<$scope.contents.length; i++){
+      // //   arr.push($scope.contents[i].From);
+      // // }
+      // console.log(arr);
+      // var cities = arr.filter(function(elem, index, self){
+      //   return index == self.indexOf(elem);
+      // });
+      // console.log(cities);
     })
 
     // $scope.$watch('cityService', function(){
     //   cityService.seat = $scope.seat;
     // });
 
-    $scope.submit = function() {
+    $scope.submit = function(dest) {
+      // contents.b 
+        console.log(dest);
         $location.path('/show');
     };
+    // $scope.flightDestination = [];
+    // $scope.changeData = function(source){
+    //   angular.forEach($scope.contents, function(data){
+    //       if(source.From == data.From){
+    //         $scope.flightDestination.push(data);
+    //       }
+    //   })
+    // }
 
     $scope.inlineOptions = {
     // customClass: getDayClass,
@@ -69,16 +89,30 @@
   });
 
 // angular.module('airlinesApp')
-  airlinesApp.controller('ShowCtrl', function(JsonService){
+  airlinesApp.controller('ShowCtrl', function($scope, JsonService){
     var vm = this;
     JsonService.query(function(data){
-      console.log(data);
-      vm.price = data[0];
-      console.log(vm.price);
+      vm.contents = data;
+      console.log(vm.contents);
     })
 
-    // vm.airline = airline;
-    // console.log(vm.airline);
+    $scope.sort = 'source';
   });
 
 // angular.module('airlinesApp')
+airlinesApp.filter('unique', function() {
+   return function(collection, keyname) {
+      var output = [], 
+          keys = [];
+
+      angular.forEach(collection, function(item) {
+          var key = item[keyname];
+          if(keys.indexOf(key) === -1) {
+              keys.push(key);
+              output.push(item);
+          }
+      });
+
+      return output;
+   };
+});

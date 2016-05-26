@@ -1,26 +1,29 @@
 <!-- <div class="jumbotron">  -->
 <h1 class="text-center">Airlines</h1>
-<form ng-submit="submit()">
+<form ng-submit="submit(dest)">
   <div class="form-group">
     <div class="row">
       <div class="container">
         <div class="col-md-4">    
           <label for="Source">Source</label>
           <!-- <input type="text" class="form-control" ng-model="source" id="source" placeholder="Source"> -->
-          <select ng-model="source" class="form-control" ng-options="content.From as content.From for content in contents">
-
-          </select>
-          <!-- <select class="form-control" ng-model="From"> -->
-            <!-- <option>{{vm.content.Airline}}</option> -->
+          <select ng-model="dest.source"  class="form-control" ng-options="content.From as content.From for content in contents | unique:'From'">
+          <!-- <select ng-model="dest.source"  class="form-control">
+            <option value=""></option>
+            <option ng-repeat="content in contents" value="{{content.From}}">{{content.From}}</option>
+          </select> -->
           </select>
         </div>
         <div class="col-md-1"><i class="fa fa-exchange fa-2x" aria-hidden="true"></i></div>
         <div class="col-md-4">
           <label for="destination">Destination</label>
           <!-- <input type="text" class="form-control" ng-model="destination" id="destination" placeholder="Destination"> -->
-           <select ng-model="destination" class="form-control" ng-options="content.To as content.From for content in contents">
-
+           <select ng-model="dest.destination" class="form-control" ng-options="content.To as content.To for content in contents | unique:'To'">
           </select>
+          <!-- <select ng-model="dest.source"  class="form-control">
+            <option value=""></option>
+            <option ng-repeat="content in contents" value="{{content.To}}">{{content.To}}</option>
+          </select> -->
         </div>
       </div>
     </div>
@@ -30,16 +33,16 @@
       <div class="container">
         <div class="col-md-4">
           <label for="seats">No. of seats</label>
-          <input type="text" class="form-control" ng-model="seats" id="seats" placeholder="seats">
+          <input type="text" class="form-control" ng-model="dest.seats" id="seats" placeholder="seats">
         </div>
          <div class="col-md-1"></div>
         <div class="col-md-4">
              <label for="seats">Journey Date</label>
           <div class="input-group">
             <span class="input-group-btn">
-              <button type="button" class="btn btn-default bcc" ng-click="open1()"><span class="glyphicon glyphicon-plane"></span></button>
+              <button type="button" class="btn btn-default bcc" ng-click="open1()"><i class="fa fa-calendar" aria-hidden="true"></i></button>
             </span>
-            <input type="text" class="form-control col-md-2 ccc" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" placeholder="DD/MM/YY" />
+            <input type="text" class="form-control col-md-2 ccc" uib-datepicker-popup="{{format}}" ng-model="dest.dt" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" placeholder="DD/MM/YY" />
           </div>
         </div>
       </div>
