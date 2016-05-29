@@ -102,30 +102,11 @@
           $scope.detailsArr.push(details);
         }
         // $location.path('/show');
-
       });
 
       console.log($scope.detailsArr);
       $scope.sortType     = 'name'; // set the default sort type
       $scope.sortReverse  = false;  // set the default sort order
-      // angular.forEach($scope.contents, function(value, key) {
-      //   if($scope.contents["From"] == flightdetails.sources && $scope.contents["To"] == flightdetails.destination){
-      //     return $scope.contents;
-      //     console.log($scope.contents);
-      //   if(key == value){
-      //     console.log(value);
-      //   }
-      // });
-
-
-      // console.log(vm.length);  
-      // for(i=0;i<vm.length;i++){
-      //   if($scope.contents["From"] == $scope.master.sources && $scope.contents["To"] == $scope.master.destination){
-      //     return $scope.contents[i];
-      //     console.log($scope.contents[i]);
-      //   }
-      // }
-        // $location.path('/show');
     }
 
 
@@ -176,29 +157,20 @@
       // console.log(data);
     });  
 
-    angular.forEach($scope.contents, function(value, key){
-        //console.log(value);
-        if(flightdetails.sources === value.From && flightdetails.destination === value.To){
-          // console.log(value.Price);
-          var details = {};
-          details.airlineName = value.Airline;
-          details.arrival = value.Arrival;
-          details.departure = value.Departure;
-          details.price = value.Price;
-          details.seats = value.Seats_available;
-          details.duration = value.Duration;
-          $scope.detailsArr.push(details);
-        }
-      });
-    
-    // var arr = [];
-    // function submit(){
-    // for(i=0;i<$scope.contents.length;i++){
-    //   if($scope.contents["From"] == $scope.sources && $scope.contents["To"] == $scope.destination){
-    //     return
-    //   }
-    // }
-    // }  
+    // angular.forEach($scope.contents, function(value, key){
+    //     //console.log(value);
+    //     if(flightdetails.sources === value.From && flightdetails.destination === value.To){
+    //       // console.log(value.Price);
+    //       var details = {};
+    //       details.airlineName = value.Airline;
+    //       details.arrival = value.Arrival;
+    //       details.departure = value.Departure;
+    //       details.price = value.Price;
+    //       details.seats = value.Seats_available;
+    //       details.duration = value.Duration;
+    //       $scope.detailsArr.push(details);
+    //     }
+    //   });
   });
 
 
